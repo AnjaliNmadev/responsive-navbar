@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(62, 69, 70);
+}
+.menubar{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(165, 226, 245);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.left-navbar{
+    width: 40%;
+    height: 15vh; 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+   
+
+}
+img{
+    width: 100px;
+    height: 90px;
+    background-size: cover;
+    margin-left: 20px;
+}
+.right-navbar{
+    width:60%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+ 
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   list-style: none;
+gap: 15px;
+margin-right: 20px;
+
+}
+.show .mobile a{
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(32, 35, 37);
+   font-weight: 600;  
+   padding: 5px;
+}
+.show .mobile a:hover{
+background-color: rgb(247, 248, 248);
+border-radius: 10px;
+}
+
+.show .bar a{
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(32, 35, 37);
+   font-weight: 600;  
+   
+    
+}
+.show .bar a:hover{
+    background-color: rgb(247, 248, 248);
+    border-radius: 10px;
+    }
+.bar{
+    display: none;
+}
+.hide{
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    width: 200px;
+    height: auto;
+    list-style: none;
+background-color:rgb(104, 195, 223);
+border-radius: 10px;
+
+box-shadow: -8px 10px 10px rgba(97, 100, 100, 0.7);
+backdrop-filter: blur(8px);
+}
+.hide .mobiles a{
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(32, 35, 37);
+   font-weight: 600;  
+   padding: 10px;
+   margin: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+}
+.hide .mobiles a:hover{
+    background-color: rgb(247, 248, 248);
+    border-radius: 10px;
+    }
+
+
+@media (max-width:768px) {
+    .show .mobile{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    
+}

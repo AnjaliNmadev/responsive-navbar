@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive menubar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="menubar">
+        <div class="left-navbar">
+<img src="logo.png" alt="logo">
+<h1>Tiger</h1>
+        </div>
+        <div class="right-navbar">
+            <ul class="show">
+                <li class="mobile"><a href="#">Home</li></a>
+                <li class="mobile"> <a href="#">Audio</li></a>
+                <li class="mobile"> <a href="#">Video</li></a>
+                <li class="mobile"><a href="#">contact </li></a>
+                <li class="mobile"> <a href="#">About us</li></a>
+                <li class="bar"> <a href="#"><i class="fa-solid fa-bars"></i></li></a>
+            </ul>
+        </div>
+
+        <ul class="hide" >
+            <li class="mobiles"><a href="#">Home</li></a>
+            <li class="mobiles"> <a href="#">Audio</li></a>
+            <li class="mobiles"> <a href="#">Video</li></a>
+            <li class="mobiles"><a href="#">contact </li></a>
+            <li class="mobiles"> <a href="#">About us</li></a>
+            <li class="mobiles cross"> <a href="#"><i class="fa-solid fa-xmark"></i></li></a>
+        </ul>
+        </ul>
+       
+    </nav>
+
+    <script>
+        const bar=document.querySelector(".bar");
+        const hide=document.querySelector(".hide");
+        const cross=document.querySelector(".cross");
+ 
+ 
+        bar.addEventListener("click",()=>{
+         hide.style.display="block";
+         
+        });
+        cross.addEventListener("click",()=>{
+         hide.style.display="none";
+        
+        });
+    </script>
+</body>
+</html>
